@@ -49,7 +49,13 @@ function decide(humanVal,robotVar){
     }
 }
 
-function play(humanSel) {
+function playRound(humanSel) {
     humanSel=humanSel.toLowerCase();
     decide(assign(humanSel),computerPlay());
+}
+
+function game() {
+    for(let i=1; i<=5; i++) {
+        playRound(window.prompt("Pick a rock, paper or scissors."));
+    }
 }
