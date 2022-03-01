@@ -1,0 +1,28 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+    width: 100px;
+    height: 40px;
+    margin: 20px;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.win {
+    color: lime;
+    font-size: larger;
+}
+
+.lose {
+    color: brown;
+    font-size: larger;
+}

@@ -37,6 +37,7 @@ function reset() {
     scoreComp.textContent=`Computer's score is ${scoreCompNum}.`;
     answer.textContent="Choose a button.";
     result.textContent="";
+    result.className="";
 }
 
 function decide(humanVal,robotVar){
@@ -74,8 +75,10 @@ function decide(humanVal,robotVar){
         }
     }
     if(scoreYouNum===5){
+        result.classList.add("win");
         result.textContent="Congrats, you win!";
     } else if(scoreCompNum===5) {
+        result.classList.add("lose");
         result.textContent="Shame, you lose."
     }
 }
