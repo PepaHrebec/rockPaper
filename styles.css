@@ -1,8 +1,23 @@
 body {
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#buttons {
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: baseline;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+
+img {
+    width: 150px;
+    height: auto;
 }
 
 button {
@@ -10,6 +25,15 @@ button {
     width: 100px;
     height: 40px;
     margin: 20px;
+    border-radius: 6px;
+    border: 2px solid black;
+    transition-duration: 0.4s;   
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
 }
 
 #result {
